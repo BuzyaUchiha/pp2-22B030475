@@ -96,4 +96,3 @@ x = input()
 y = int(input())
 w = int(input())
 print(Account.deposit(y), Account.withdraw(w))
-#task6
