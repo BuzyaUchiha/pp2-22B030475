@@ -1,6 +1,6 @@
-
+movies = [
 {
-"name": "Usual Suspects",
+"name": "Usual Suspects", 
 "imdb": 7.0,
 "category": "Thriller"
 },
@@ -74,8 +74,7 @@
 "imdb": 7.2,
 "category": "Romance"
 }
-
-
+]
 def ismorethan(string, movies):
     for i in movies:
         if i['name'] == string.capitalize():

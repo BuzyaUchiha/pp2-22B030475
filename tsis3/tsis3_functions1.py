@@ -44,34 +44,30 @@ def prime(lists):
             prime_numbers.append(number)
     return prime_numbers
 prime_numbers=[]
-n = int(input())
-lists = list(map(float,input().strip().split()))[:n]
+lists = list(map(float,input().strip().split()))
 print(prime(lists))
 """
 
 #task5
 """
-def permitation(strings):
-    new_lists = []
-    lists = list(strings)
-    lists.sort()
-    sets = set(lists)
-    c = 1
-    i = 1
-    while i <= len(lists):
-        c = c * i
-        i += 1
-    j = 1
-    r = 1
-    while j <= (len(lists) - len(sets))+1:
-        r = r * j
-        j += 1
-    return c/r
-strings = str(input())
-print(permitation(strings))
+def permutations(data, i, length):
+    if i == length:
+        print("".join(data))
+    else:
+        for j in range(i, length):
+            data[i], data[j] = data[j], data[i]
+            permutations(data, i + 1, length)
+            data[i], data[j] = data[j], data[i]
+
+def print_permutations(string):
+    permutations(list(string), 0, len(string))
+
+string = input()
+print_permutations(string)
+
 """
 #task6
-"""
+
 def reverses(string):
     new_string = " h"
     lists = list(string)
@@ -82,7 +78,7 @@ def reverses(string):
 lists = []
 string = str(input())
 print(reverses(string))
-"""
+
 #task7
 """
 def dublicates(lists):
