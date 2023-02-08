@@ -67,7 +67,7 @@ print_permutations(string)
 
 """
 #task6
-
+"""
 def reverses(string):
     new_string = " h"
     lists = list(string)
@@ -78,7 +78,7 @@ def reverses(string):
 lists = []
 string = str(input())
 print(reverses(string))
-
+"""
 #task7
 """
 def dublicates(lists):
@@ -183,7 +183,6 @@ list = list(map(int,input().strip().split()))[:n]
 print (histogram(list))
 """
 #task13
-"""
 import random
 
 random_n = random.randrange(1,20)
@@ -191,13 +190,13 @@ nog = 0
 
 name = (input("Hello! What is your name?" + "\n"))
 print ("\n")
-print("Well, {name}, I am thinking of a number between 1 and 20. \nTake a guess")
+print(f'Well, {name}, I am thinking of a number between 1 and 20. \nTake a guess')
 while True:
     nog += 1
     nop = int(input())
     print("\n")
     if nop == random_n:
-        print("Good job, {name}! You guessed my number in {number_of_guesses} guesses!")
+        print(f'Good job, {name}! You guessed my number in {nog} guesses!')
         break
     elif nop < random_n:
         print ("Your guess is too low. \nTake a guess")
@@ -205,5 +204,5 @@ while True:
     else:
         print ("Your guess is too high. \nTake a guess")
         continue
-"""
+        
 
