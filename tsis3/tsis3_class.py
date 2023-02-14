@@ -1,4 +1,4 @@
-"""#task1
+#task1
 class St:
     def __init__(self, name):
         self.name = name
@@ -9,8 +9,8 @@ class St:
 n = input()
 x = St(n)
 print(x)
-"""
-"""#task2
+
+#task2
 class Shape:
     def area(self, length:int):
         self.length = length
@@ -22,9 +22,9 @@ class Square(Shape):
         print(self.length**2)
 n = int(input())
 x = Square(n)
-x.area()"""
+x.area()
 
-"""#task3
+#task3
 class Shape:
     def area(self, length:int, width:int):
         self.length = length
@@ -38,12 +38,11 @@ class Rectangle(Shape):
 n = int(input())
 m = int(input())
 x = Rectangle(n,m)
-x.area()"""
-
-"""#task4
+x.area()
+#task4
 import math   
 class Point(object):
-    def __init__(self, x, y):
+    def __init__(self):
         self.x = x
         self.y = y
 
@@ -75,8 +74,7 @@ point1.move(10, 1)
 print(point1)
 point2 = Point(6,7)
 print(point1.dist(point2))
-"""
-"""#task5
+#task5
 class Account:
     def __init__(self, owner:str, balance:int):
         self.owner = owner
@@ -96,19 +94,17 @@ x = input()
 y = int(input())
 w = int(input())
 print(Account.deposit(y), Account.withdraw(w))
-"""
+
 #task6
-"""
-def is_prime(n):
-    if n <= 1:
+def is_prime(num):
+    if num < 2:
         return False
-    for i in range(2, n):
-        if n % i == 0:
+    for i in range(2, num):
+        if num % i == 0:
             return False
     return True
 
-prime_numbers=[]
-n = int(input())
-lists = list(map(float,input().strip().split()))[:n]
-print(is_prime(lists))
-"""
+numbers = list(map(int,input().strip().split()))
+prime_numbers = list(filter(lambda x: is_prime(x), numbers))
+print("Prime numbers in the list:", prime_numbers)
+

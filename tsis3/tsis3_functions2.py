@@ -116,3 +116,10 @@ def avgscoreofcat(movies, cat):
     avg = avg / avgmember
     return avg
 # print(avgscoreofcat(movies, 'Thriller'))
+
+def fiml(movies):
+    for film in movies:
+        if(film['imdb']<4.0 or film['category']=='Romance'):
+         print(film['Name'])
+        
+    
