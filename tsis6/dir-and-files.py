@@ -1,6 +1,6 @@
 #task1
 import os
-path = '/Users/kuanysspandiar/pp2-22B030287'
+path = '/Users/BuzyaUchiha/pp2-22B030475'
 print('Directories:')
 for dir in os.listdir(path):
     if os.path.isdir(os.path.join(path, dir)):
@@ -14,7 +14,7 @@ for item in os.listdir(path):
     print(item)
 #task2
 import os
-path = '/Users/kuanysspandiar/pp2-22B030287'
+path = '/Users/BuzyaUchiha/pp2-22B030475'
 if os.path.exists(path):
     print(f'{path} exists')
     if os.access(path, os.R_OK):
@@ -33,7 +33,7 @@ else:
     print(f'{path} does not exist')
 #task3
 import os
-path = '/Users/kuanysspandiar/pp2-22B030287'
+path = '/Users/BuzyaUchiha/pp2-22B030475'
 if os.path.exists(path):
     print(f'{path} exists')
     filename = os.path.basename(path)
@@ -43,14 +43,14 @@ if os.path.exists(path):
 else:
     print(f'{path} does not exist')
 #task4
-path='/Users/kuanysspandiar/pp2-22B030287/tsis6/lines.txt'
+path='/Users/BuzyaUchiha/pp2-22B030475/tsis6/lines.txt'
 count = 0
 with open(path, 'r') as file:
     for line in file:
         count+=1
 print(f'The number of lines is: {count}')
 #task5
-path='/Users/kuanysspandiar/pp2-22B030287/tsis6/lines.txt'
+path='/Users/BuzyaUchiha/pp2-22B030475/tsis6/lines.txt'
 list1 = ['climate', 'pp2', 'world', 'python']
 with open(path, 'w') as file:
     for word in list1:
@@ -64,13 +64,13 @@ for i in range(65, 91):
         file.write(f'This is file {name}.\n')
     print(f'File {name} created.')
 #task7
-path = '/Users/kuanysspandiar/pp2-22B030287/tsis6/lines.txt'
-name = '/Users/kuanysspandiar/pp2-22B030287/tsis6/lines_copy.txt'
+path = '/Users/BuzyaUchiha/pp2-22B030475/tsis6/lines.txt'
+name = '/Users/BuzyaUchiha/pp2-22B030475/tsis6/lines_copy.txt'
 with open(path, 'r') as file,open(name, 'w') as file1:
     file1.write(file.read())
 print('Completed succesfully')
 #task8
 import os
-path='/Users/kuanysspandiar/pp2-22B030287/tsis6/file.txt'
+path='/Users/BuzyaUchiha/pp2-22B030475/tsis6/file.txt'
 if os.path.exists(path) and os.access(path, os.R_OK):
     os.remove("file.txt")
